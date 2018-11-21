@@ -65,7 +65,7 @@ route.post('/login', function(req,res){
 });
 
 
-route.get('/list', chechAuth , function(req,res){
+route.get('/list' , function(req,res){
 
 	User.find({},function(err,user){
 		if(err){
